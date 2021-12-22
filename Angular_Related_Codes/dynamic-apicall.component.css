@@ -1,0 +1,208 @@
+.space{
+    flex:1 1 auto;
+    text-align: center;
+    margin:0 auto;
+}
+.btn{
+    font-size:20px;
+    border: bold;
+    color: black;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+     margin: 2px 2px;
+    cursor: pointer;
+    background-color:rgb(240, 205, 243);
+    border-radius:7px;
+    font-weight:bold;
+}
+.text{
+    font-weight:bold;
+    border: bold;
+    font-size:16.5px;
+    border-radius:7px;
+}
+.toolbar{
+    color: rgb(138, 34, 161);  
+    
+}
+b{
+    color: rgb(70, 53, 78);
+    font-size:30px;
+}
+.table,td,th{
+    font-size:26px;
+    margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black;
+}
+td,th{
+    font-size:22px;
+    font-weight:bold;
+padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.btn1{
+    font-size:30px;
+    border: bold;
+    color: black;
+    padding: 50px 150px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+     margin: 2px 2px;
+    cursor: pointer;
+    background-color:rgb(170, 229, 236);
+    border-radius:7px;
+    font-weight:bold;
+    margin: 10px 5 px;
+     position: absolute;
+    left: 320px;
+    top: 510px;	}
+
+    .btn2{
+        font-size:30px;
+        border: bold;
+        color: black;
+        padding: 50px 150px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+         margin: 2px 2px;
+        cursor: pointer;
+        background-color:rgb(170, 229, 236);
+        border-radius:7px;
+        font-weight:bold;
+        margin: 10px 5 px;
+         position: absolute;
+        left: 815px;
+        top: 510px;	}
+
+.btn3{
+            font-size:30px;
+            border: bold;
+            color: black;
+            padding: 50px 80px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 20px;
+             margin: 2px 2px;
+            cursor: pointer;
+            background-color:rgb(170, 229, 236);
+            border-radius:7px;
+            font-weight:bold;
+            margin: 10px 5 px;
+             position: absolute;
+            left: 320px;
+            top: 150px;	}
+        
+ .btn4{
+                font-size:30px;
+                border: bold;
+                color: black;
+                padding: 50px 80px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 20px;
+                 margin: 2px 2px;
+                cursor: pointer;
+                background-color:rgb(170, 229, 236);
+                border-radius:7px;
+                font-weight:bold;
+                margin: 10px 5 px;
+                 position: absolute;
+                left: 625px;
+                top: 150px;
+            	}
+                .btn5{
+                    font-size:30px;
+                    border: bold;
+                    color: black;
+                    padding: 50px 75px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 20px;
+                     margin: 2px 2px;
+                    cursor: pointer;
+                    background-color:rgb(170, 229, 236);
+                    border-radius:7px;
+                    font-weight:bold;
+                    margin: 10px 5 px;
+                     position: absolute;
+                    left: 930px;
+                    top: 150px;
+                    }
+                    .btn6{
+                        font-size:30px;
+                        border: bold;
+                        color: black;
+                        padding: 50px 76px;
+                        text-align: center;
+                        text-decoration: none;
+                        display: inline-block;
+                        font-size: 20px;
+                         margin: 2px 2px;
+                        cursor: pointer;
+                        background-color:rgb(170, 229, 236);
+                        border-radius:7px;
+                        font-weight:bold;
+                        margin: 10px 5 px;
+                         position: absolute;
+                        left: 320px;
+                        top: 330px;	}
+                    
+             .btn7{
+                            font-size:30px;
+                            border: bold;
+                            color: black;
+                            padding: 50px 68px;
+                            text-align: center;
+                            text-decoration: none;
+                            display: inline-block;
+                            font-size: 20px;
+                             margin: 2px 2px;
+                            cursor: pointer;
+                            background-color:rgb(170, 229, 236);
+                            border-radius:7px;
+                            font-weight:bold;
+                            margin: 10px 5 px;
+                             position: absolute;
+                            left: 625px;
+                            top: 330px;
+                            }
+                            .btn8{
+                                font-size:30px;
+                                border: bold;
+                                color: black;
+                                padding: 50px 40px;
+                                text-align: center;
+                                text-decoration: none;
+                                display: inline-block;
+                                font-size: 20px;
+                                 margin: 2px 2px;
+                                cursor: pointer;
+                                background-color:rgb(170, 229, 236);
+                                border-radius:7px;
+                                font-weight:bold;
+                                margin: 10px 5 px;
+                                 position: absolute;
+                                left: 930px;
+                                top: 330px;
+                                }
+.btn1:hover,.btn2:hover,.btn3:hover,.btn4:hover,.btn5:hover,.btn6:hover,.btn7:hover,.btn8:hover{
+    opacity: 1;
+    background-color: rgb(241, 153, 153);
+}
+.btn:hover{
+    opacity: 1;
+    background-color: rgb(186, 228, 151);
+}
