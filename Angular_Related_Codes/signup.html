@@ -1,0 +1,83 @@
+<div style="text-align: center; background-image: url('./assets/1.jpg'); background-repeat: no-repeat;
+    background-attachment: fixed;;
+    background-size: cover;">
+    <mat-toolbar color = "primary" >  
+        <div class="space">
+        <span style="font-size:40px">To Create New User, Please fill the below details : </span>  
+        </div>
+        <button type = "button" class= "btn"
+        (click)="onClick()">Login</button>
+     </mat-toolbar>  
+<form [formGroup]="form" (ngSubmit)="onSubmit(form.value)">
+
+
+    <br> <br>
+    <div>  <b style="font-size:23px">User Id : </b>
+    
+     <input class="text" type="text" name="userid"  formControlName="userid"/>
+     <br>
+     <br/> <b style="font-size:23px">Username : </b>
+   
+     <input class="text" type="text" name="username"  formControlName="username"/>
+     <br>
+     <br/> <b style="font-size:23px">E-Mail : </b>
+     
+     <input class="text" type="text" name="email"  formControlName="email"/>
+     <br>
+     <br/>
+     <b style="font-size:23px">First Name : </b>
+     <input class="text" type="text" name="fname"  formControlName="fname"/>
+     <br>
+     <br/>
+     <b style="font-size:23px">Last Name : </b>
+     <input  class="text" type="text" name="lname"  formControlName="lname"/>
+     <br>
+     <br/>
+     
+     <b style="font-size:23px">Phone No : </b>
+     <input class="text" type="text" name="phno"  formControlName="phno"/>
+     <br>
+     <br/>
+
+     <b style="font-size:23px">Role of the User : </b>
+     <input class="text" type="text" name="role"  formControlName="role"/>
+     
+     <br/>
+
+     <br/>
+     <b style="font-size:23px">Is Active : </b>
+     <select  class="text" name="isactive" formControlName="isactive">
+         <option value="true">True</option>
+         <option value="false">False</option>
+     </select>
+     <br/>
+     <br>
+     <b style="font-size:23px">Date of Birth : </b>
+     <input class="text" type="date" name="dob" formControlName="dob"/>
+     
+     <br/>
+ 
+     <br>
+     <b style="font-size:23px">Created On : </b>
+     <input  class="text" type="date" name="created_on"  formControlName="created_on"/>
+     <br/>
+     <br>
+     <b style="font-size:23px">Password : </b>
+     <input  class="text" type="password" name="pwd"  formControlName="pwd"/>
+     
+     
+     <br/>
+     <br>
+    <button type = "button" class= "btn btn-success"
+    (click)="onSubmit(form.value)">Create User</button>
+
+    </div>
+     
+ 
+     
+     </form>
+     <br/>
+     <br> <br/>
+     <br> <br/>
+    
+    </div>

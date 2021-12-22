@@ -1,0 +1,59 @@
+<div style="text-align: center; background-image: url('./assets/1.jpg'); background-repeat: no-repeat;
+    background-attachment: fixed;;
+    background-size: cover;">
+    <mat-toolbar class="toolbar" >  
+        <div class="space">
+        <span style="font-size:40px">WELCOME TO TASK TRACKING SYSTEM !!</span>  
+        </div>
+
+     </mat-toolbar>  
+
+<form [formGroup]="form" (ngSubmit)="onSubmit(form.value)">
+
+   <br/> 
+   <br/> 
+    <b style="font-size:30px">Login to Continue</b>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <b style="font-size:25px"> User Name : </b>
+    
+     <input class="text" type="text" name="uname"  formControlName="uname"/>
+     
+     <br/><br/>
+     <b style="font-size:25px">
+         Password : 
+     </b>
+     
+     <input class="text" type="password" name="pwd"  formControlName="pwd"/>
+     <br/>
+    <br/>
+     <br/><br/>
+
+    <button type = "button" class= "btn"
+    (click)="onSubmit(form.value)">Login</button>
+    &nbsp;&nbsp; &nbsp;
+    <button type = "button" class= "btn"
+    (click)="signup()">Create User</button>
+    
+</form>
+<br/>
+    <br/>
+     <br/><br/>
+     <br/>
+    <br/>
+     <br/><br/>
+     <br/>
+    <br/>
+     <br/><br/>
+     <br/>
+    <br/>
+     <br/><br/>
+     <br/>
+     <br/><br/>
+</div>
+
+
+
+    
