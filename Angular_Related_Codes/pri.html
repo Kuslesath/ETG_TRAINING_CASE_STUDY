@@ -1,0 +1,57 @@
+<div style="text-align: center; background-image: url('../assets/1.jpg'); background-repeat: no-repeat;
+    background-attachment: fixed;;
+    background-size: cover;">
+    <mat-toolbar class="toolbar" color="lightyellow" >  
+        <button type = "button" class= "btn"
+        (click)="onClick1()">Home</button> 
+        <div class="space">
+        <span style="font-size:40px">To Change the exisiting priority, Please fill the below details :</span>  
+        </div>
+        <button type = "button" class= "btn"
+        (click)="onClick()">Logout</button>
+
+     </mat-toolbar><br>
+     <br>
+     <br>
+     <form [formGroup]="form2" (ngSubmit)="onSubmitpri(form2.value)">
+
+        <b style="font-size:23px">Task Id : </b>
+        <input class="text" type="text" name="taskid"  formControlName="taskid"/>
+        <br>
+        <br>
+
+        <b style="font-size:23px">Priority : </b>
+        <select class="text" name="priority" formControlName="priority">
+            <option value="High">High&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+            <option value="Medium">Medium  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp; </option>
+            <option value="Low">Low  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      </option>
+        </select>
+        <br>
+        <br>
+
+         <button type = "button" class= "btn"
+        (click)="onSubmitpri(form2.value)">Change Priority</button>
+     </form>
+
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br><br>
+     <br>
+     <br>
+     <br>
+     <br><br>
+     <br>
+     <br>
+     <br>
+     <br><br>
+     <br>
+</div>

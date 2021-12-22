@@ -1,0 +1,58 @@
+<div style="text-align: center; background-image: url('../assets/1.jpg'); background-repeat: no-repeat;
+    background-attachment: fixed;;
+    background-size: cover;">
+    <mat-toolbar class="toolbar" color="lightyellow" >  
+        <button type = "button" class= "btn"
+        (click)="onClick1()">Home</button> 
+        <div class="space">
+        <span style="font-size:40px">To track the tasks based on Status, Please select an option :</span>  
+        </div>
+        <button type = "button" class= "btn"
+        (click)="onClick()">Logout</button>
+
+     </mat-toolbar><br>
+     <br>
+     <br>
+     <form [formGroup]="form2" (ngSubmit)="onSubmit(form2.value)">
+
+        <b style="font-size:23px">Status : </b>
+        <select class="text" name="status" formControlName="status">
+            <option value="Inprogress">In Progress&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;</option>
+            <option value="Onhold">On Hold&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;</option>
+            <option value="Cancelled">Cancelled&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;</option>
+            <option value="Closed">Closed&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;</option>
+        </select>
+        <br>
+        <br>
+         <button type = "button" class= "btn"
+        (click)="onSubmit(form2.value)">check status</button>
+    </form>
+    <BR>
+        <BR>
+    <table class="table">
+        <th>Task-ID &nbsp;&nbsp;&nbsp;&nbsp;</th>
+        <th>
+           Owner-ID &nbsp;&nbsp;&nbsp;&nbsp;
+        </th>
+        <TH>Task-Name &nbsp;&nbsp;&nbsp;&nbsp;</TH>
+        <TH>Status &nbsp;&nbsp;&nbsp;&nbsp;</TH>
+        <TH>
+            Status_Changed_On &nbsp;&nbsp;&nbsp;&nbsp;
+        </TH>
+    
+            <tr *ngFor="let a of tasks">
+              <td>{{a.taskid}}</td>
+              <td>{{a.ownerid}}</td>
+              <td>{{a.name}}</td>
+              <td>{{a.status}}</td>
+              <td>{{a.status_changed_on}} </td>
+            </tr>
+          </table>
+          
+       <br><br><br>
+       <br><br><br>
+       <br><br><br>
+       <br><br><br>
+       <br><br><br>
+       <br><br><br><br><br><br>
+</div>

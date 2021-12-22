@@ -1,0 +1,54 @@
+<div style="text-align: center; background-image: url('../assets/1.jpg'); background-repeat: no-repeat;
+    background-attachment: fixed;;
+    background-size: cover;">
+    <mat-toolbar class="toolbar" color="lightyellow" >  
+        <button type = "button" class= "btn"
+        (click)="onClick1()">Home</button> 
+        <div class="space">
+        <span style="font-size:40px">To Change the Notes and BookMark, Please fill the below details :</span>  
+        </div>
+        <button type = "button" class= "btn"
+        (click)="onClick()">Logout</button>
+     </mat-toolbar><br>
+     
+
+    <form [formGroup]="form2" (ngSubmit)="onSubmitnotes(form2.value)">
+        <br>
+        <br>
+        <b style="font-size:23px">Task Id : </b>
+        <input class="text" type="text" name="taskid"  formControlName="taskid"/>
+        <br>
+        <br>
+        <b style="font-size:23px">Notes : </b>
+        <input class="text" type="text" name="notes"  formControlName="notes"/>
+        <br>
+        <br>
+        <b style="font-size:23px">Book Mark : </b>
+        <select  class="text" name="isbookMarked" formControlName="isbookMarked">
+         <option value="true">True </option>
+         <option value="false">False </option>
+        </select>
+        <br/>
+        <br>
+        <button type = "button" class= "btn"
+        (click)="onSubmitnotes(form2.value)">Change Notes</button>
+    </form>
+    <br>
+    <br>
+    <br>
+    <br> 
+    <br><br>
+    <br>
+    <br>
+    <br> 
+    <br><br>
+    <br>
+    <br>
+    <br> 
+    <br><br>
+    <br>
+    <br>
+    <br> 
+    <br> <br> 
+    <br>
+</div>

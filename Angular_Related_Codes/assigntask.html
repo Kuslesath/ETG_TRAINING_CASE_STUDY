@@ -1,0 +1,57 @@
+<div style="text-align: center; background-image: url('../assets/1.jpg'); background-repeat: no-repeat;
+    background-attachment: fixed;;
+    background-size: cover;">
+    <mat-toolbar class="toolbar" color="lightyellow" >  
+        <button type = "button" class= "btn"
+        (click)="onClick1()">Home</button>
+        <div class="space">
+        <span style="font-size:40px">To Assign task , Please fill the below details :</span>  
+        </div>
+        <button type = "button" class= "btn"
+        (click)="onClick()">Logout</button>
+
+     </mat-toolbar><br>
+     <br>
+     <br>
+     <form [formGroup]="form" (ngSubmit)="onSubmitas(form.value)">
+
+        <b style="font-size:23px">Task Id : </b>
+        <input class="text" type="text" name="taskid"  formControlName="taskid"/>
+        <br>
+        <br>
+        <b style="font-size:23px">User Id : </b>
+        <select class="text" name="ownerid" formControlName="ownerid" >
+            <option *ngFor="let a of users" value={{a.userid}}>{{a.userid}}-{{a.fname}} {{a.lname}}-{{a.role}}</option>
+        </select>
+        <br>
+        <br>
+        
+        <button type = "button" class= "btn"
+        (click)="onSubmitas(form.value)">Assign</button>
+    
+        
+    </form>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br><br>
+<br>
+<br>
+<br>
+<br><br>
+<br>
+<br>
+<br>
+<br><br>
+<br>
+
+</div>     

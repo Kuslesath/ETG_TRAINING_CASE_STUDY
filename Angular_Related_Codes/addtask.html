@@ -1,0 +1,91 @@
+<div style="text-align: center; background-image: url('../assets/1.jpg'); background-repeat: no-repeat;
+    background-attachment: fixed;;
+    background-size: cover;">
+    <mat-toolbar class="toolbar" color="lightyellow" >  
+        <button type = "button" class= "btn"
+        (click)="onClick1()">Home</button> 
+        <div class="space">
+        <span style="font-size:40px">To Create New Task, Please fill the below details :</span>  
+        </div>
+        <button type = "button" class= "btn"
+        (click)="onClick()">Logout</button>
+
+     </mat-toolbar> 
+
+    <form [formGroup]="form" (ngSubmit)="onSubmit(form.value)">
+        <br>
+        <br>
+        <b style="font-size:23px">Task Id : </b>
+        <input class="text" type="text" name="taskid"  formControlName="taskid"/>
+        <br>
+        <br>
+
+        <b style="font-size:23px">Owner Id : </b>
+        <select class="text" name="ownerid" formControlName="ownerid" >
+            <option *ngFor="let a of users" value={{a.userid}}>{{a.userid}}-{{a.fname}} {{a.lname}}-{{a.role}}</option>
+        </select>
+        <br>
+        <br>
+
+        <b style="font-size:23px">Creator Id : </b>
+        <select class="text" name="creatorid"  formControlName="creatorid">
+            <option *ngFor="let a of users" value={{a.userid}}>{{a.userid}}-{{a.fname}} {{a.lname}}-{{a.role}}</option>
+        </select>
+        <br>
+        <br>
+
+        <b style="font-size:23px">Task Name : </b>
+        <input class="text" type="text" name="name"  formControlName="name"/>
+        <br>
+        <br>
+
+        <b style="font-size:23px">Description : </b>
+        <input class="text" type="text" name="descrptn"  formControlName="descrptn"/>
+        <br>
+        <br>
+
+        <b style="font-size:23px">Status : </b>
+        <select class="text" name="status" formControlName="status">
+            <option value="Inprogress">In Progress&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;</option>
+            <option value="Onhold">On Hold&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;</option>
+            <option value="Cancelled">Cancelled&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;</option>
+            <option value="Closed">Closed&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;</option>
+        </select>
+        <br>
+        <br>
+        
+        <b style="font-size:23px">Priority : </b>
+        <select class="text" name="priority" formControlName="priority">
+            <option value="High">High&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+            <option value="Medium">Medium  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp; </option>
+            <option value="Low">Low  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      </option>
+        </select>
+        <br>
+        <br>
+
+     <b style="font-size:23px">Created On : </b>
+     <input  class="text" type="date" name="created_on"  formControlName="created_on"/>
+     <br/>
+     <br>
+     <b style="font-size:23px">Status Changed On : </b>
+     <input  class="text" type="date" name="status_changed_on"  formControlName="status_changed_on"/>
+     <br/>
+     <br>
+
+     <button type = "button" class= "btn"
+    (click)="onSubmit(form.value)">Create Task</button>
+
+
+
+
+    </form>
+     <br>
+     <br>
+     <br>
+     <br> 
+     <br><br>
+     <br> 
+     <br><br>
+     <br>
+     
+</div>

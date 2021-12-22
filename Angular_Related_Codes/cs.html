@@ -1,0 +1,58 @@
+<div style="text-align: center; background-image: url('../assets/1.jpg'); background-repeat: no-repeat;
+    background-attachment: fixed;;
+    background-size: cover;">
+    <mat-toolbar class="toolbar" color="lightyellow" >  
+        <button type = "button" class= "btn"
+        (click)="onClick1()">Home</button> 
+        <div class="space">
+        <span style="font-size:40px">To track the tasks based on Status, Please select an option :</span>  
+        </div>
+        <button type = "button" class= "btn"
+        (click)="onClick()">Logout</button>
+
+     </mat-toolbar><br>
+     <br>
+     <br>
+     <form [formGroup]="form" (ngSubmit)="onSubmit(form.value)">
+
+        <b style="font-size:23px">Task Id : </b>
+        <input class="text" type="text" name="taskid"  formControlName="taskid"/>
+        <br>
+        <br>
+        <b style="font-size:23px">Status : </b>
+        <select class="text" name="status" formControlName="status">
+            <option value="Inprogress">In Progress&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;</option>
+            <option value="Onhold">On Hold&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;</option>
+            <option value="Cancelled">Cancelled&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;</option>
+            <option value="Closed">Closed&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;</option>
+        </select>
+        <br>
+        <br>
+        <b style="font-size:23px">Status Changed On : </b>
+        <input  class="text" type="date" name="status_changed_on"  formControlName="status_changed_on"/>
+        <br/>
+        <br>
+        <br>
+        <button type = "button" class= "btn"
+        (click)="onSubmit(form.value)">Update Status</button>
+    
+    
+        </form>
+         <br>
+         <br>
+         <br>
+         <br> 
+         <br><br>
+         <br> 
+         <br><br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br> 
+         <br><br>
+         <br> 
+         <br><br>
+         <br><br><br>
+         
+    </div>

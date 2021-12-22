@@ -1,0 +1,72 @@
+<div style="text-align: center; background-image: url('../assets/1.jpg'); background-repeat: no-repeat;
+    background-attachment: fixed;;
+    background-size: cover;">
+    <mat-toolbar class="toolbar" color="lightyellow" >  
+        <button type = "button" class= "btn"
+        (click)="onClick1()">Home</button> 
+        <div class="space">
+        <span style="font-size:40px">To search task details, Please select an option :</span>  
+        </div>
+        <button type = "button" class= "btn"
+        (click)="onClick()">Logout</button>
+     </mat-toolbar><br>
+     <br>
+     <br>
+     <form [formGroup]="form2" (ngSubmit)="onSubmit(form2.value)">
+
+        <b style="font-size:23px">Key : </b>
+        <select class="text" name="key" formControlName="key">
+            <option value="taskid">Task ID &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;</option>
+            <option value="ownerid">Owner ID &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;</option>
+            <option value="creatorid">Creator ID &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;</option>
+            <option value="name">Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;</option>
+            <option value="priority">Priority &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;</option>
+        </select>
+        <br>
+        <br>
+        <b style="font-size:23px">Value : </b>
+        <input class="text" type="text" name="value"  formControlName="value"/>
+        <br>
+        <br>
+         <button type = "button" class= "btn"
+        (click)="onSubmit(form2.value)">Search</button>
+    </form>
+    <BR>
+        <BR>
+            <table class="table">
+                <th>Task-ID </th>
+                <th>
+                   Owner-ID 
+                </th>
+                <th>Creator-ID </th>
+                <TH>Task-Name </TH>
+                <th>Description </th>
+                <TH>Status </TH>
+                <th>Priority </th>
+                <th>Notes </th>
+                <th>Created_On</th>
+                <TH>
+                    Status_Changed_On 
+                </TH>
+            
+                    <tr *ngFor="let a of task1">
+                      <td>{{a.taskid}}</td>
+                      <td>{{a.ownerid}}</td>
+                      <td>{{a.creatorid}}</td>
+                      <td>{{a.name}}</td>
+                      <td>{{a.descrptn}}</td>
+                      <td>{{a.status}}</td>
+                      <td>{{a.priority}}</td>
+                      <td>{{a.notes}}</td>
+                        <td>{{a.created_on}}</td>
+                      <td>{{a.status_changed_on}} </td>
+                    </tr>
+                  </table>
+          
+       <br><br><br>
+       <br><br><br>
+       <br><br><br>
+       <br><br><br>
+       <br><br><br>
+       <br><br><br><br><br><br>
+</div>
